@@ -1,0 +1,10 @@
+/* ==========================================================================
+   #NAVBAR
+   ========================================================================== */
+
+.c-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-right: $inuit-global-spacing-unit;
+    padding-left: $inuit-global-spacing-unit;
+}
