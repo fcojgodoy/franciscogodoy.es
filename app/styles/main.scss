@@ -1,323 +1,205 @@
-$icon-font-path: '../fonts/';
-// bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+/* ==========================================================================
+   INUITCSS
+   ========================================================================== */
+
+/**
+ * inuitcss, by @csswizardry
+ *
+ * github.com/inuitcss | inuitcss.com
+ */
+
+/**
+ * This is an example inuitcss manifest file. DO NOT MODIFY THIS FILE DIRECTLY.
+ * Instead, copy and paste it into your own CSS directory and make additions,
+ * extensions, and modifications there.
+ */
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Config...............Project-level configuration and feature switches.
+ * Core.................inuitcss’ core and setup settings.
+ * Global...............Project-wide variables and settings.
+ *
+ * TOOLS
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Clearfix.............Micro clearfix mixin.
+ * Hidden...............Mixin for hiding elements.
+ * Sass MQ..............inuitcss’ default media query manager.
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Normalize.css........A level playing field using @necolas’ Normalize.css.
+ * Reset................A tiny reset to complement Normalize.css.
+ * Shared...............Sensibly and tersely share some global commonalities
+ *                      (particularly useful when managing vertical rhythm).
+ *
+ * ELEMENTS
+ * Page.................Set up our document’s default `font-size` and
+ *                      `line-height`.
+ * Headings.............Very minimal (i.e. only font-size information) for
+ *                      headings 1 through 6.
+ * Images...............Base image styles.
+ * Tables...............Simple table styles.
+ *
+ * OBJECTS
+ * Wrapper..............Page constraint object.
+ * Layout...............Generic layout module.
+ * Media................Image- and text-like content side by side. The
+ *                      poster-child of OOCSS.
+ * Flag.................Table-layout-based advancement on the Media object.
+ * List-bare............Lists with no bullets or indents.
+ * List-inline..........A list whose items all site in a line.
+ * Box..................Simple boxing abstraction.
+ * Block................Image-on-top-of-text object.
+ * Ratio................A container for maintaining aspect ratio of content.
+ * Crop.................Provide a cropping context for media (images, etc.).
+ * Table................Classes for manipulating `table`s.
+ * Pack.................Pack items into available horizontal space.
+ *
+ * COMPONENTS
+ * Buttons..............An example button component, and how it fits into the
+ *                      inuitcss framework.
+ *
+ * UTILITIES
+ * Clearfix.............Bind our clearfix onto a utility class.
+ * Widths...............Simple width helper classes.
+ * Headings.............Reassigning our heading styles to helper classes.
+ * Spacings.............Nudge bits of the DOM around with these spacing
+ *                      classes.
+ * Responsive-Spacings..Enhances the function of normal spacings for
+ *                      responsive usage.
+ * Print................Reset-like styles taken from the HTML5 Boilerplate.
+ * Hide.................Helper classes to hide content
+ */
 
 
-/*------------------------------------*\
-    #SETTINGS
-\*------------------------------------*/
-
-@import "fonts";
-
-/*------------------------------------*\
-    #BASE
-\*------------------------------------*/
-
-h1 {
-  font:17px montserratregular;
-  text-align: center;
-}
-h2 {
-  font:33px opensanslight, sans-serif;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.subheader {
-  margin-bottom:30px;
-  font-size:20px;
-}
-p {
-  text-align: justify;
-}
-p.formato2 {
-  font-size: 0.9em;
-  font-weight: 700;
-  line-height: 1.3em;
-}
-a,
-button {
-  text-decoration: none;
-
-}
+// SETTINGS
+@import "settings/settings.config";
+@import "./bower_components/inuitcss/settings/settings.core";
+@import "settings/settings.global";
 
 
-/*------------------------------------*\
-    #OBJECTS --> Wrappers
-\*------------------------------------*/
-
-body{
-  height: auto;
-}
-[class^="wrapper"]{
-  padding:10% 0;
-  margin:10px;
-  background: $gray-lighter;
-  //@include border-radius(10px);
-  section{
-    //max-width:400px;
-  }
-}
-
-.wrapper--white{
-  background:#fff;
-}
-
-.container--max-width{
-  margin:0 auto;
-  max-width: 315px;
-}
-
-/*------------------------------------*\
-    #COMPONENTS
-\*------------------------------------*/
-
-@import 'menu';
-
-/* #Button
-==================================================*/
-.button{
-  @include box-shadow(0 8px 6px -6px rgba(0, 0, 0, 0.5));
-
-  &:active{
-    @include box-shadow(none);
-    position:relative;
-    top:3px;
-  }
-}
 
 
-// inicio
-.wrapper-ini{
-  img{
-    display: block;
-    margin:0 auto;
-  }
-}
-// presentación
-.wrapper-pre{
-  .m-pre{
-    .m-cv{
-      display: block;
-    }
-  }
-}
 
-// skills
-.seccion-hab {
-  ul{
-      padding:20px 0;
-      li{
-        list-style: none;
-        font-size:0.9em;
-        padding-bottom:20px;
-      }
-      li:before{
-    font-size:50px;
-    display:block;
-    //line-height:0.9em;
-      }
-      .icon-html:before{
-        color: #F06529;
-      }
-      .icon-css:before{
-        color: #28A9E0;
-      }
-      .icon-sass:before{
-        color:#CC6699;
-      }
-      .icon-compass:before{
-        color: #C41407;
-      }
-      .icon-js{
-        color: #000;
+// TOOLS
+@import "./bower_components/inuitcss/tools/tools.font-size";
+@import "./bower_components/inuitcss/tools/tools.clearfix";
+@import "./bower_components/inuitcss/tools/tools.hidden";
+// Sass MQ
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+// $mq-breakpoints: (
+//     mobile:  320px,
+//     tablet:  740px,
+//     desktop: 980px,
+//     wide:    1300px,
+//
+//     // Tweakpoints
+//     // desktopAd: 810px,
+//     // mobileLandscape: 480px
+// );
 
-        display:block;
-        //line-height:0.9em;
-        &:before{
-          background: #F1DA4E;
-          width:50px;
-          margin:0 auto;
-          position: relative;
-        }
-      }
-      .icon-git:before{
-        color:#F54D27;
-        font-size:55px; //--------------------------igualar tamaño iconfonts
-        margin-top:-5px;
-      }
-      .icon-tablet:before{
-        color: #1B1B1B;
-      }
-      .icon-wp:before{
-        color: #006990;
-      }
-      .icon-cart:before{
-        color: #22A0D1;
-      }
-      .icon-adobe:before{
-        color: #FF0000;
-      }
-      .icon-js:before{
-        color: #2E2E2C;
-        &:before{
-          background: #F1DA4E;
-        }
-      }
-  }
-}
-
-// contacto
-.wrapper-con{
-  .button{
-    width:48%;
-    float:left;
-    margin:1%;
-  }
-}
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (mobile, tablet, desktop).
+$mq-show-breakpoints: (mobile, tablet, desktop, wide);
+@import "./bower_components/sass-mq/mq";
 
 
-/*------------------------------------*\
-    ##PORTFOLIO-SECTION
-\*------------------------------------*/
-
-@mixin transition($transition-property, $transition-time, $method) {
-  -webkit-transition: $transition-property $transition-time $method;
-  -moz-transition: $transition-property $transition-time $method;
-  transition: $transition-property $transition-time $method;
-}
 
 
-// PROJECTS
-.gallery {
-  //padding: 40px 0 300px;
-  position: relative;
-  overflow: hidden;
-  ul {
-    //padding-top: 50px;
-    //position: relative;
-          @include list-unstyled;
-    li {
-      margin-bottom: 20px;
-     // position: relative;
-      a {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        line-height: 0;
-        img{
-          @include img-responsive;
-        }
-        &:before {
-          position: absolute;
-          width: 32px;
-          height: 32px;
-          top: 40%;
-          left: 50%;
-          margin: -14px 0 0 -16px;
-          background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asodipodi%3D%22http%3A//sodipodi.sourceforge.net/DTD/sodipodi-0.dtd%22%20xmlns%3Ainkscape%3D%22http%3A//www.inkscape.org/namespaces/inkscape%22%20inkscape%3Aversion%3D%220.48.4%20r9939%22%20sodipodi%3Adocname%3D%22icon-fullscreen.svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20960%20560%22%0A%09%20enable-background%3D%22new%200%200%20960%20560%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Csodipodi%3Anamedview%20%20borderopacity%3D%221%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23666666%22%20objecttolerance%3D%2210%22%20gridtolerance%3D%2210%22%20guidetolerance%3D%2210%22%20showgrid%3D%22false%22%20fit-margin-top%3D%220%22%20fit-margin-left%3D%220%22%20inkscape%3Azoom%3D%227.375%22%20inkscape%3Acx%3D%22-5.1525424%22%20inkscape%3Acy%3D%2216%22%20id%3D%22namedview11%22%20inkscape%3Awindow-x%3D%22-8%22%20inkscape%3Awindow-y%3D%22-8%22%20fit-margin-right%3D%220%22%20inkscape%3Apageopacity%3D%220%22%20fit-margin-bottom%3D%220%22%20inkscape%3Awindow-width%3D%221366%22%20inkscape%3Awindow-height%3D%22706%22%20inkscape%3Awindow-maximized%3D%221%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Acurrent-layer%3D%22svg2%22%3E%0A%09%3C/sodipodi%3Anamedview%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22220%22%20y%3D%22260%22%20fill%3D%22%23FFFFFF%22%20width%3D%22536%22%20height%3D%2224%22/%3E%0A%3C/g%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22476%22%20y%3D%224%22%20fill%3D%22%23FFFFFF%22%20width%3D%2224%22%20height%3D%22556%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A) no-repeat;
-          content: "";
-          opacity: 0;
-          z-index: 1;
-          @include transition(all, 0.3s, linear);
-        }
-        &:hover:before {
-          top: 50%;
-          opacity: 1;
-        }
-        &:after {
-          position: absolute;
-          width: 100%;
-          top: 0;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.3);
-          content: "";
-          opacity: 0;
-          @include transition(all, 0.3s, linear);
-        }
-        &:hover:after {
-          opacity: 1;
-        }
-      }
-    }
-  }
-}
 
-// PORT
-.gallery__port {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: white;
-  background-color: #fafafa;
-  z-index: 103;
-  visibility: hidden;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
-  border-bottom: 1px solid #d0d0d0;
-  @include transition(all, 0.5s, ease-in-out);
-  img {
-    @include img-responsive;
-    @include center-block;
-  }
-  // .row{
-  //     padding: 30px 20px 20px;
-  // }
-  // .gallery__description {
-  //   float: left;
-  //   width: 50%;
-  //   max-height: 100%;
-  //   padding: 0 40px 40px;
-  //   overflow: auto;
-  // }
-  h1 {
-    font-size: 35px;
-    padding: 0 30px;
-    word-break: break-all;
-  }
-  >* {
-    opacity: 0;
-    @include transition(all, 0.5s, linear);
-  }
-  &.gallery--item_open {
-    visibility: visible;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-    @include transition(all, 0.4s, ease-in-out);
-  }
-  > * {
-    opacity: 1;
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-  }
-}
+// GENERIC
+@import "./bower_components/inuitcss/generic/generic.box-sizing";
+@import "./bower_components/inuitcss/generic/generic.normalize";
+@import "./bower_components/inuitcss/generic/generic.reset";
+@import "./bower_components/inuitcss/generic/generic.shared";
 
-@media(min-width:768px) {
-  .gallery__port{
-     padding: 100px;
-  }
-}
 
-.gallery__close-buttom {
-  width: 21px;
-  height: 21px;
-  position: fixed;
-  right: 15px;
-  top: -121px;
-  opacity: 1;
-  z-index: 1004;
-  @include transition(all, 0.1s, ease-in-out);
-  .gallery--item_open & {
-    opacity: 1;
-    top: 30px;
-    @include transition(all, 0.3s, ease-in-out);
-  }
-  &:hover {
-    text-decoration: none;
-  }
-}
+
+
+
+// ELEMENTS
+@import "./bower_components/inuitcss/elements/elements.page";
+@import "./bower_components/inuitcss/elements/elements.headings";
+@import "./bower_components/inuitcss/elements/elements.images";
+@import "./bower_components/inuitcss/elements/elements.tables";
+@import "elements/elements.page";
+
+
+
+
+
+// OBJECTS
+//
+// Override default variables
+$inuit-wrapper-width: 1500px;
+// Uncomment and add to this section as necessary.
+@import "./bower_components/inuitcss/objects/objects.wrapper";
+@import "./bower_components/inuitcss/objects/objects.layout";
+@import "./bower_components/inuitcss/objects/objects.media";
+@import "./bower_components/inuitcss/objects/objects.flag";
+@import "./bower_components/inuitcss/objects/objects.list-bare";
+@import "./bower_components/inuitcss/objects/objects.list-inline";
+@import "./bower_components/inuitcss/objects/objects.box";
+@import "./bower_components/inuitcss/objects/objects.block";
+@import "./bower_components/inuitcss/objects/objects.ratio";
+@import "./bower_components/inuitcss/objects/objects.crop";
+@import "./bower_components/inuitcss/objects/objects.table";
+@import "./bower_components/inuitcss/objects/objects.pack";
+@import "objects/objects.card";
+@import "objects/objects.content-small";
+@import "objects/objects.wrapper";
+
+
+
+
+
+// COMPONENTS
+//
+// Build and include your project’s UI components here.
+@import "components/components.buttons";
+@import "components/components.label";
+@import "components/components.main-info";
+@import "components/components.main-section-title";
+@import "components/components.project-card";
+@import "components/components.project-main-text";
+
+
+
+
+
+// UTILITIES
+@import "./bower_components/inuitcss/utilities/utilities.clearfix";
+
+// Be aware that enabling offsets produces a large chunk of classes which might
+// bloat your CSS, depending of the amount of breakpoints you defined.
+// Only set this to `true` if you are absolutely sure about what you are doing.
+$inuit-offsets: true;
+@import "./bower_components/inuitcss/utilities/utilities.widths";
+@import "./bower_components/inuitcss/utilities/utilities.headings";
+@import "./bower_components/inuitcss/utilities/utilities.spacings";
+// Responsive-Spacing
+$inuit-responsive-spacing-directions: (
+    null: null,
+    "-bottom": "-bottom",
+);
+
+$inuit-responsive-spacing-properties: (
+    "margin": "margin",
+    "padding": "padding",
+);
+
+$inuit-responsive-spacing-sizes: (
+    "-small": $inuit-global-spacing-unit-small,
+    null: $inuit-global-spacing-unit,
+    "-large": $inuit-global-spacing-unit-large,
+    "-huge": $inuit-global-spacing-unit-huge,
+);
+@import "./bower_components/inuitcss/utilities/utilities.responsive-spacings";
+@import "./bower_components/inuitcss/utilities/utilities.print";
+@import "./bower_components/inuitcss/utilities/utilities.hide";

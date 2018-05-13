@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #FIFTY FROM TABLET
+   ========================================================================== */
+
+/**
+ * Fifty width from tablets.
+ *
+ */
+
+.o-content-small {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+
+    @include mq( $from: tablet ) {
+        max-width: 710px;
+    }
+
+    @include mq( $from: desktop ) {
+        max-width: 740px;
+    }
+}

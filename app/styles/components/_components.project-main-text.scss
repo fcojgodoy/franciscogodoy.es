@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #MAIN INFO
+   ========================================================================== */
+
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+.c-project-main-text {
+    text-align: center;
+    // @include inuit-font-size( 24px );
+}
+
+
+.c-project-image {
+    background-color: $color-main-bg-secondary;
+
+    > img {
+        box-shadow: $global-shadow;
+    }
+}
+
+    .c-project-image__caption {
+        text-align: center;
+        padding-top: $inuit-global-spacing-unit;
+    }

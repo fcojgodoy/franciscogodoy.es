@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #LABEL
+   ========================================================================== */
+
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+.c-label {
+    display: inline-block;
+    padding: 0 $inuit-global-spacing-unit-tiny;
+    background-color: $color-main-bg;
+    // line-height: $label-line-height;
+    @include inuit-font-size( 11px );
+    // color: $label-color;
+    vertical-align: middle;
+    white-space: nowrap;
+}

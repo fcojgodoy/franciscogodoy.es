@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+/**
+ * Complement for Inuitcss objects.wrapper styles (Page-level constraining and
+ * wrapping elements.)
+ *
+ */
+
+.o-wrapper {
+    padding-right: $inuit-global-spacing-unit-large;
+    padding-left:  $inuit-global-spacing-unit-large;
+}
