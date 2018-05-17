@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #COPY
+   ========================================================================== */
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color-text;
+}
+
+
+
+
+   
+p {
+	// margin-bottom: $inuit-global-spacing-unit-small;
+	
+	> br {
+		margin-bottom: $inuit-global-spacing-unit-tiny;
+	}
+}

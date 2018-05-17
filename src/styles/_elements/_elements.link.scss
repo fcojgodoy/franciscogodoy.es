@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #LINK
+   ========================================================================== */
+
+a {
+    color: $color-text-secondary;
+    font-weight: 400;
+   	text-decoration: none;
+
+   	// &:visited {
+   	// 	color: $color__link-visited;
+   	// }
+   	&:hover,
+   	&:focus,
+   	&:active {
+        color: $color-text;
+   	}
+   	&:focus {
+   		outline: thin dotted;
+   	}
+   	&:hover,
+   	&:active {
+   		outline: 0;
+   	}
+}

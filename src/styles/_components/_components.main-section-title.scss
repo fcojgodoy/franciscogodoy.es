@@ -1,0 +1,12 @@
+/* ==========================================================================
+#MAIN SECTION TITLE
+========================================================================== */
+
+.c-main-section-title {
+    color: $color-text-secondary;
+    max-width: 100%;
+
+    @include mq( $from:tablet ) {
+        max-width: 37.5%;
+    }
+}

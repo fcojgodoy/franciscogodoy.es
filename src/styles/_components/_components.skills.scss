@@ -1,0 +1,21 @@
+/* ==========================================================================
+#SKILLS
+========================================================================== */
+
+.c-skills__item {
+    @include inuit-font-size( 15px );
+    
+    &::after {
+        content: '|';
+        color: $color-text-secondary;
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+    
+    &:last-child {
+        
+        &::after {
+            content: none;
+        }
+    }
+}
