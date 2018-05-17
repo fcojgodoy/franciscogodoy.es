@@ -1,4 +1,4 @@
-# Fco. J. Godoy personal webp
+# Fco. J. Godoy personal web
 
 ## Technologies
 
