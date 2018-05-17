@@ -10,7 +10,7 @@
 .c-label {
     display: inline-block;
     padding: 0 $inuit-global-spacing-unit-tiny;
-    background-color: $color-main-bg;
+    background-color: $color-bg;
     // line-height: $label-line-height;
     @include inuit-font-size( 11px );
     // color: $label-color;

@@ -15,7 +15,7 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900" rel="stylesheet">
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
@@ -38,48 +38,54 @@
                 <p>Puedes ver mis trabajos destacados en <a href="#section-projects" class="">esta misma página</a>.</p>
                 <p>He trabajado para empresas como Catalana Occidente, SM, la Universidad Pablo de Olavide, el RACC o CaixaBank.</p>
                 <ul class="o-list-inline c-skills">
-                    <p>Mis conocimientos son:</p>
-                    <li class="o-list-inline__item c-skills_item">HTML</li>
-                    <li class="o-list-inline__item c-skills_item">CSS</li>
-                    <li class="o-list-inline__item c-skills_item">SASS</li>
-                    <li class="o-list-inline__item c-skills_item">Javascript</li>
-                    <li class="o-list-inline__item c-skills_item">jQuery</li>
-                    <li class="o-list-inline__item c-skills_item">Git</li>
-                    <li class="o-list-inline__item c-skills_item">Gulp</li>
-                    <li class="o-list-inline__item c-skills_item">BEM</li>
-                    <li class="o-list-inline__item c-skills_item">Atomic Design</li>
-                    <li class="o-list-inline__item c-skills_item">WordPress</li>
-                    <li class="o-list-inline__item c-skills_item">SEO on-page</li>
+                    <li class="o-list-inline__item c-skills__item">HTML</li>
+                    <li class="o-list-inline__item c-skills__item">CSS</li>
+                    <li class="o-list-inline__item c-skills__item">SASS</li>
+                    <li class="o-list-inline__item c-skills__item">Javascript</li>
+                    <li class="o-list-inline__item c-skills__item">jQuery</li>
+                    <li class="o-list-inline__item c-skills__item">Git</li>
+                    <li class="o-list-inline__item c-skills__item">Gulp</li>
+                    <li class="o-list-inline__item c-skills__item">BEM</li>
+                    <li class="o-list-inline__item c-skills__item">Atomic Design</li>
+                    <li class="o-list-inline__item c-skills__item">WordPress</li>
+                    <li class="o-list-inline__item c-skills__item">SEO on-page</li>
                 </ul>
             </div>
         </section>
 
         <section id="section-projects">
-          <h1 class="c-main-section-title">Mis trabajos más destacados</h1>
-            <article class="c-project-card o-card o-box u-margin-bottom-large">
-                <header class="c-project-card__header c-project-card__header">
-                    <h1 class="u-h6">CaixaBank</h1>
-                    <ul class="o-list-inline c-project-tags">
-                        <li class="o-list-inline__item c-skills_item c-label">HTML</li>
-                        <li class="o-list-inline__item c-skills_item c-label">CSS</li>
-                        <li class="o-list-inline__item c-skills_item c-label">SASS</li>
-                        <li class="o-list-inline__item c-skills_item c-label">Javascript</li>
-                        <li class="o-list-inline__item c-skills_item c-label">jQuery</li>
-                        <li class="o-list-inline__item c-skills_item c-label">Git</li>
-                        <li class="o-list-inline__item c-skills_item c-label">BEM</li>
-                    </ul>
-                </header>
-                <main class="c-project-card__main o-card__main u-margin-bottom">
-                    <div class="c-project-description">
-                        <p><strong>¿Tienes un pico imprevisto de trabajo o quieres acelerar tu projecto?</strong></p>
-                        <p>Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.</p>
-                    </div>
-                    <a href="example.project.html" class="c-btn c-btn--primary c-btn--small">Leer más</a>
-                </main>
-                <footer class="c-project-card__footer o-card__footer">
-                    <time class="c-project-date">2017-2018</time>
-                </footer>
+          <h1 class="c-main-section-title u-h6">Mis trabajos más destacados</h1>
+
+            <article class="c-project-card u-margin-bottom-large">
+                <a href="example.project.html">
+                    <header class="c-project-card__header u-padding-bottom-tiny">
+                        <div class="c-project-card__client">
+                            <img class="" src="images/logos/logo_caixabank.svg" alt="CaixaBank" width="100" height="20">
+                        </div>
+                        <h1 class="c-project-card__title u-margin-bottom-none">
+                            Desarrollo frontend
+                        </h1>
+                    </header>
+                    <main class="c-project-card__main u-padding-bottom">
+                        <p class="c-project-card__description u-margin-bottom-tiny"><strong>¿Un pico imprevisto de trabajo o quieres acelerar tu projecto?</strong><br>
+                        Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.</p>
+                        <ul class="o-list-inline c-project-tags u-margin-bottom-none">
+                            <li class="o-list-inline__item c-skills__item c-label">HTML</li>
+                            <li class="o-list-inline__item c-skills__item c-label">CSS</li>
+                            <li class="o-list-inline__item c-skills__item c-label">SASS</li>
+                            <li class="o-list-inline__item c-skills__item c-label">Javascript</li>
+                            <li class="o-list-inline__item c-skills__item c-label">jQuery</li>
+                            <li class="o-list-inline__item c-skills__item c-label">Git</li>
+                            <li class="o-list-inline__item c-skills__item c-label">BEM</li>
+                        </ul>
+                    </main>
+                    <footer class="c-project-card__footer">
+                        <small class="c-project-agency">Guindo Design</small>
+                        <small><time class="c-project-date">2017-2018</time></small>
+                    </footer>
+                </a>
             </article>
+
         </section>
 
     </div>

@@ -26,10 +26,16 @@ $font-family-serif: Georgia, Cambria, "Times New Roman", serif;
 
 // Descriptive color variables
 
+$color-black: #000;
+$color-gray: gray;
+
 $color-gallery: #f0f0f0;
 $color-wild-sand: #f6f6f6;
 
 // Functional color variables
 
-$color-main-bg: $color-gallery;
-$color-main-bg-secondary: $color-wild-sand;
+$color-bg: $color-gallery;
+$color-bg-secondary: $color-wild-sand;
+
+$color-text: $color-black;
+$color-text-secondary: $color-gray;

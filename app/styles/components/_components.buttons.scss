@@ -38,7 +38,7 @@
 ========================================================================== */
 
 .c-btn--primary {
-    background-color: $color-main-bg;
+    background-color: $color-bg;
 
     &,
     &:hover,
@@ -50,7 +50,7 @@
 
     &:hover,
     &:focus {
-        background-color: ( $color-main-bg - 40 );
+        background-color: ( $color-bg - 40 );
     }
 
 }

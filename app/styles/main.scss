@@ -128,6 +128,7 @@ $mq-show-breakpoints: (mobile, tablet, desktop, wide);
 @import "./bower_components/inuitcss/elements/elements.headings";
 @import "./bower_components/inuitcss/elements/elements.images";
 @import "./bower_components/inuitcss/elements/elements.tables";
+@import "elements/elements.link";
 @import "elements/elements.page";
 
 
@@ -151,7 +152,7 @@ $inuit-wrapper-width: 1500px;
 @import "./bower_components/inuitcss/objects/objects.crop";
 @import "./bower_components/inuitcss/objects/objects.table";
 @import "./bower_components/inuitcss/objects/objects.pack";
-@import "objects/objects.card";
+// @import "objects/objects.card";
 @import "objects/objects.content-small";
 @import "objects/objects.wrapper";
 

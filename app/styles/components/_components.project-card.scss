@@ -7,6 +7,37 @@
  * that make up your UI. Component classes are prefixed with a `c-`.
  */
 
- .c-project-card {
-     box-shadow: $global-shadow;
- }
+.c-project-card {
+    // box-shadow: $global-shadow;
+}
+
+    .c-project-card__footer {
+        text-align: right;
+
+        > * {
+            padding-right: 5px;
+            border-right: 1px solid $color-bg-secondary;
+            margin-right: 5px;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+    }
+
+    .c-project-card__client {
+        width: 70px;
+
+        > img {
+            max-width: 100%;
+        }
+    }
+
+    .c-project-card__title {
+        @include inuit-font-size( 17px );
+    }
+
+    .c-project-card__description {
+        @include inuit-font-size( 14px, 1.5 );
+    }
