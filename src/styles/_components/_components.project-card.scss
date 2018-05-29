@@ -12,6 +12,7 @@
     flex-direction: column;
     height: 100%;
     border: 1px solid $color-bg-secondary;
+    color: $color-text;
     
     &:hover,
     &:focus,
@@ -26,7 +27,7 @@
 
     .c-project-card__footer {
         text-align: right;
-        margin-top: auto; /* [1] */
+        margin-top: auto;
 
         > * {
             padding-right: 5px;
@@ -50,8 +51,10 @@
 
     .c-project-card__title {
         @include inuit-font-size( 17px );
+        font-weight: 200;
     }
 
     .c-project-card__description {
         @include inuit-font-size( 14px, 1.5 );
+        font-weight: 200;
     }
