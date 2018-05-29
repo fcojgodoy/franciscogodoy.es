@@ -23,7 +23,9 @@
     .c-skills__item {
         @include inuit-font-size( 12px );
     }
+
 }
+
 
     .c-project-card__footer {
         text-align: right;
@@ -41,6 +43,7 @@
 
     }
 
+
     .c-project-card__client {
         width: 70px;
 
@@ -49,10 +52,12 @@
         }
     }
 
+
     .c-project-card__title {
         @include inuit-font-size( 17px );
         font-weight: 200;
     }
+
 
     .c-project-card__description {
         @include inuit-font-size( 14px, 1.5 );
