@@ -1,24 +1,25 @@
 mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, descriptionStrong, descriptionContent, tags, agency, data )
-  article.c-project-card.u-margin-bottom-large.u-padding
-    a( href=link)
-      header.c-project-card__header.u-padding-bottom-tiny
-        .c-project-card__client
-          img( src=clientImg alt=clientAlt width=clientWidth, height=clientHeight )
-        h1.c-project-card__title.u-margin-bottom-none= title
-      main.c-project-card__main.u-padding-bottom
-        p.c-project-card__description.u-margin-bottom-tiny
-          strong= descriptionStrong
-          br
-          span= descriptionContent
-        ul.o-list-inline.c-project-tags.u-margin-bottom-none
-          
-          //- each val in []
-          //-   li.o-list-inline__item.c-skills__item.c-label= val
-      
-      footer.c-project-card__footer
-        small.c-project-agency= agency
-        small
-          time.c-project-date= data
+  .o-layout__item.u-margin-bottom( class="u-1/1 u-1/2@tablet" )
+    article
+      a.c-project-card.u-padding( href=link )
+        header.c-project-card__header.u-padding-bottom-tiny
+          .c-project-card__client
+            img( src=clientImg alt=clientAlt width=clientWidth, height=clientHeight )
+          h1.c-project-card__title.u-margin-bottom-none= title
+        main.c-project-card__main.u-padding-bottom
+          p.c-project-card__description.u-margin-bottom-tiny
+            strong= descriptionStrong
+            br
+            span= descriptionContent
+          ul.o-list-inline.c-project-tags.u-margin-bottom-none
+            
+            //- each val in []
+            //-   li.o-list-inline__item.c-skills__item.c-label= val
+        
+        footer.c-project-card__footer
+          small.c-project-agency= agency
+          small
+            time.c-project-date= data
           
 +article(
   '/proyecto-caixabank.html',
@@ -40,5 +41,66 @@ mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, des
   'RACC',
   '100',
   '20',
-  'Desarrollo front-end con Gulp y plantilla en PHP'
+  'Desarrollo front-end con Gulp y plantilla en PHP',
+  '¿Un pico imprevisto de trabajo o quieres acelerar tu projecto?',
+  'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
+  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
+  'Guindo Design',
+  '2017-2018'  
+  )
+          
++article(
+  '/proyecto-caixabank.html',
+  '/assets/files/img/logos/logo_caixabank.svg',
+  'CaixaBank',
+  '100',
+  '20',
+  'Puro desarrollo front-end',
+  '¿Un pico imprevisto de trabajo o quieres acelerar tu projecto?',
+  'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
+  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
+  'Guindo Design',
+  '2017-2018'
+  )
+
++article(
+  '/desarrollo-front-caixabank.html',
+  '/assets/files/img/logos/logo_caixabank.svg',
+  'RACC',
+  '100',
+  '20',
+  'Desarrollo front-end con Gulp y plantilla en PHP',
+  '¿Un pico imprevisto de trabajo o quieres acelerar tu projecto?',
+  'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
+  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
+  'Guindo Design',
+  '2017-2018'  
+  )
+          
++article(
+  '/proyecto-caixabank.html',
+  '/assets/files/img/logos/logo_caixabank.svg',
+  'CaixaBank',
+  '100',
+  '20',
+  'Puro desarrollo front-end',
+  '¿Un pico imprevisto de trabajo o quieres acelerar tu projecto?',
+  'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
+  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
+  'Guindo Design',
+  '2017-2018'
+  )
+
++article(
+  '/desarrollo-front-caixabank.html',
+  '/assets/files/img/logos/logo_caixabank.svg',
+  'RACC',
+  '100',
+  '20',
+  'Desarrollo front-end con Gulp y plantilla en PHP',
+  '¿Un pico imprevisto de trabajo o quieres acelerar tu projecto?',
+  'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
+  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
+  'Guindo Design',
+  '2017-2018'  
   )
