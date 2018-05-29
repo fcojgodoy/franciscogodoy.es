@@ -9,6 +9,7 @@
 
 .c-project-main-text {
     text-align: center;
+    letter-spacing: 0.02rem;
     // @include inuit-font-size( 24px );
 }
 
@@ -18,6 +19,9 @@
 
     > img {
         box-shadow: $global-shadow;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
