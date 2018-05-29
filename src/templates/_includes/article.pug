@@ -1,5 +1,5 @@
 mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, descriptionStrong, descriptionContent, tags, agency, data )
-  .o-layout__item.u-margin-bottom( class="u-1/1 u-1/2@tablet" )
+  .o-layout__item.u-margin-bottom( class="u-1/1 u-1/2@tablet u-1/3@desktop" )
     article
       a.c-project-card.u-padding( href=link )
         header.c-project-card__header.u-padding-bottom-tiny
@@ -11,10 +11,11 @@ mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, des
             strong= descriptionStrong
             br
             span= descriptionContent
+
           ul.o-list-inline.c-project-tags.u-margin-bottom-none
-            
-            //- each val in []
-            //-   li.o-list-inline__item.c-skills__item.c-label= val
+
+            each val in tags
+              li.o-list-inline__item.c-skills__item= val
         
         footer.c-project-card__footer
           small.c-project-agency= agency
@@ -30,7 +31,7 @@ mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, des
   'Puro desarrollo front-end',
   '¿Un pico imprevisto de trabajo o quieres acelerar tu projecto?',
   'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
-  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
+  [ 'HTML', 'CSS', 'SASS', 'Javascript' ],
   'Guindo Design',
   '2017-2018'
   )

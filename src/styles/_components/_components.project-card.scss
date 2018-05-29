@@ -18,6 +18,10 @@
     &:active {
       box-shadow: $global-shadow;
     }
+    
+    .c-skills__item {
+        @include inuit-font-size( 12px );
+    }
 }
 
     .c-project-card__footer {
