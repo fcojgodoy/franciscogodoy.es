@@ -17,7 +17,7 @@ $inuit-responsive-text-aligns-directions: (
   // 'left',
   'center',
   // 'right',
-  // 'justify',
+  'justify',
 ) !default;
 
 @each $direction in $inuit-responsive-text-aligns-directions {

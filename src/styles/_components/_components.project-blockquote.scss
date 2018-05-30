@@ -25,6 +25,7 @@
 
     .c-project-blockquote__blockquote {
         @include inuit-font-size( 24px );
+        font-style: italic;
     }
 
     .c-project-blockquote__author {
