@@ -1,0 +1,21 @@
+/* ==========================================================================
+   #LAYOUT RESPONSIVE
+   ========================================================================== */
+
+/**
+ * Layout responsive.
+ *
+ */
+
+@include mq( $from: mobile ) {
+
+    .u-layout--reverse\@tablet {
+        direction: rtl;
+        
+        > .o-layout__item {
+          direction: ltr;
+        }
+
+    }
+
+}
