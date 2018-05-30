@@ -14,32 +14,34 @@ block content
 
     section
 
-      h1.c-main-section-title Hola
-      .c-main-info
-        p
-          | Soy un desarrollador front-end y WordPress freelance con 7 años de experiencia profesional, fundador de 
-          a(href='https://growpress.es') GrowPress.
-          br
-          | Me encanta ayudar a mis clientes a conseguir sus objetivos en el mundo de Internet.
-          br
-          | Realizo proyectos completos con WordPress y me uno a equipos de desarrollo para proyectos o picos de trabajo.
-        p
-          | He trabajado para empresas como Catalana Occidente, SM, la Universidad Pablo de Olavide, el RACC o CaixaBank.
-          br
-          | Estoy trabajando para hacer visibles en esta web algunos de mis trabajos.
-          br
-          | También puedes ver mi 
-          a(href='https://www.linkedin.com/in/franciscogodoyonieva/' title='perfil en Linkedin') perfil en Linkedin
-          | , echarle un ojo a mis 
-          a(href='https://github.com/fcojgodoy' title='GitHub') repositorios en GitHub
-          |  o pedirme la información que desees en 
-          a(href='mailto:hola@franciscogodoy.es' title='hola@franciscogodoy.es') hola@franciscogodoy.es
-          | .
+      .o-layout.o-layout--flush
+        .o-layout__item( class='u-1/1 u-1/2@tablet u-1/3@wide' )
+          h1.c-main-section-title Hola
+          .c-main-info
+            p
+              | Soy un desarrollador front-end y WordPress freelance con 7 años de experiencia profesional, fundador de 
+              a(href='https://growpress.es') GrowPress.
+              br
+              | Me encanta ayudar a mis clientes a conseguir sus objetivos en el mundo de Internet.
+              br
+              | Realizo proyectos completos con WordPress y me uno a equipos de desarrollo para proyectos o picos de trabajo.
+            p
+              | He trabajado para empresas como Catalana Occidente, SM, la Universidad Pablo de Olavide, el RACC o CaixaBank.
+              br
+              | Estoy trabajando para hacer visibles en esta web algunos de mis trabajos.
+              br
+              | También puedes ver mi 
+              a(href='https://www.linkedin.com/in/franciscogodoyonieva/' title='perfil en Linkedin') perfil en Linkedin
+              | , echarle un ojo a mis 
+              a(href='https://github.com/fcojgodoy' title='GitHub') repositorios en GitHub
+              |  o pedirme la información que desees en 
+              a(href='mailto:hola@franciscogodoy.es' title='hola@franciscogodoy.es') hola@franciscogodoy.es
+              | .
 
-        ul.o-list-inline.c-skills
+            ul.o-list-inline.c-skills
 
-            each val in ['HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'Gulp', 'BEM', 'Atomic Design', 'WordPress', 'SEO on page']
-                li.o-list-inline__item.c-skills__item= val
+                each val in ['HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'Gulp', 'BEM', 'Atomic Design', 'WordPress', 'SEO on page']
+                    li.o-list-inline__item.c-skills__item= val
 
 
     section#section-projects
