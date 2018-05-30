@@ -11,44 +11,77 @@ block content
   include _includes/nav
 
   .c-page.o-wrapper
+
     article
+
       section
-        h2.c-project-main-text.o-content-small.u-margin-top-huge.u-margin-bottom-huge.u-h3
+
+        h2.c-project-main-text.o-content-small.u-margin-top-huge.u-margin-bottom.u-h3
           | Simpleza y funcionalidad: permite añadir a los comentarios de WordPress una casilla de aceptación de la   política de privacidad, para así poder cumplir con el 
           abbr( title='Reglamento General de Protección de Datos' ) RGPD.
           br
           | Permite también añadir un texto a través de una instancia del editor visual de WordPress.
+
+        .c-project-extra-info.o-list-inline.u-text-center.u-margin-bottom-huge
+
+          .c-project-labels.o-list-inline__item
+            ul.o-list-inline.u-margin-right
+              each val in [ 'HTML', 'CSS', 'WordPress' ]
+                li.o-list-inline__item.c-skills__item= val
+
+          .c-project-link.o-list-inline__item
+            a.u-margin-right( target='_blank' href="https://wordpress.org/plugins/wp-comment-policy-checkbox/").c-btn.c-btn--primary.c-btn--small Ver en WordPress
+            a( target='_blank' href="https://github.com/fcojgodoy/WP-Comment-Policy-Check").c-btn.c-btn--primary.c-btn--small Ver en Github
+
       section
-        .o-layout
+
+        .o-layout( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+
           .o-layout__item(class='u-1/1')
+
             figure.c-project-image.u-padding(class='u-padding-large@tablet u-padding-huge@desktop')
-              img(src='/assets/files/img/portfolio/Screenshot-2018-5-29-WP-Comment-Policy-Checkbox.png' alt='')
+              img(src='/assets/files/img/portfolio/wpcpc-front.png' alt='')
               figcaption.c-project-image__caption
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-        .o-layout.o-layout--middle
+
+
+        .o-layout.o-layout--middle( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+
           .o-layout__item(class='u-1/1 u-1/2@tablet')
+
             figure.c-project-image.c-project-image.u-padding(class='u-padding-large@tablet')
-              img(src='/assets/files/img/portfolio/racc-min.png' alt='')
+              img(src='/assets/files/img/portfolio/wpcpc-code.jpeg' alt='')
               figcaption.c-project-image__caption
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+
           .o-layout__item(class='u-1/1 u-1/2@tablet')
+
             .o-box
               p.u-h4
                 | Simpleza y funcionalidad: permite añadir a los comentarios de WordPress una casilla de   aceptación de la   política de privacidad, para así poder cumplir con el 
                 abbr( title='Reglamento General de Protección de Datos' ) RGPD.
                 br
                 | Permite también añadir un texto a través de una instancia del editor visual de WordPress.
-        .o-layout
+
+
+        .o-layout.o-layout--middle( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+
           .o-layout__item(class='u-1/1 u-1/2@tablet')
-            figure.c-project-image.c-project-image.u-padding(class='u-padding-large@tablet')
-              img(src='/assets/files/img/portfolio/racc-min.png' alt='')
-              figcaption.c-project-image__caption
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+
+            figure.c-project-blockquote
+              blockquote.c-project-blockquote__blockquote( cite='https://wordpress.org/support/topic/mas-simple-no-puede-ser/' )
+                | Francamente bueno, objetivo y práctico, hace que no seamos tan vulnerables a la nueva RGPD frente a los comentarios de los blogs!
+                br
+                | Un imprescindible si WordPress no se pone las pilas.
+              figcaption.c-project-blockquote__author @raulfg
+
+            figure.c-project-blockquote
+              blockquote.c-project-blockquote__blockquote( cite='https://wordpress.org/support/topic/gracias-por-el-plugin-2/' ) Muchas gracias por actualizar el plugin, no veas lo útil que nos está siendo para cumplir la RGPD en los comentarios.
+              figcaption.c-project-blockquote__author @lauradiaz)
+
           .o-layout__item(class='u-1/1 u-1/2@tablet')
+
             figure.c-project-image.c-project-image.u-padding(class='u-padding-large@tablet')
-              img(src='/assets/files/img/portfolio/racc-min.png' alt='')
+              img(src='/assets/files/img/portfolio/wpcpc-stats.png' alt='')
               figcaption.c-project-image__caption
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-        .o-layout
-          .o-layout__item(class='u-1/2 u-1/2@tablet')
-            blockquote( cite='https://wordpress.org/support/topic/mas-simple-no-puede-ser/' ) Francamente bueno, objetivo y práctico, hace que no seamos tan vulnerables a la nueva RGPD frente a los comentarios de los blogs! <br>Un imprescindible si WordPress no se pone las pilas.
+                | En los tres primeros meses el plugin ha sido instalado en más de 2.000 webs.
