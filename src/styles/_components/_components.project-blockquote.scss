@@ -1,0 +1,39 @@
+/* ==========================================================================
+#PROJECT BLOCKQUOTE
+========================================================================== */
+
+/**
+* Project Blockquote
+*/
+
+/**
+* 1. Allow us to style box model properties.
+*/
+
+.c-project-blockquote {
+    text-align: center;
+
+    &::before {
+      content: "“";
+      display: block;
+      height: 50px;
+      @include inuit-font-size( 100px );
+      color: $color-text-secondary;
+    }
+
+}
+
+    .c-project-blockquote__blockquote {
+        @include inuit-font-size( 24px );
+    }
+
+    .c-project-blockquote__author {
+        color: $color-text-secondary;
+    }
+
+
+
+
+
+/* Style variants
+========================================================================== */
