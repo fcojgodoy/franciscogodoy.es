@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $inuit-global-spacing-unit;
+    padding-top: $inuit-global-spacing-unit;
+    padding-bottom: $inuit-global-spacing-unit;
     background-color: #fff;
 }
