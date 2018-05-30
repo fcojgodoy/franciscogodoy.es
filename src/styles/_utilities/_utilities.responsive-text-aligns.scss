@@ -1,0 +1,41 @@
+/* ==========================================================================
+   #RESPONSIVE-TEXT-ALIGNS
+   ========================================================================== */
+
+/**
+ * Generate responsive text alignment classes.
+ 
+ * https://github.com/zomars/inuitcss-utilities-responsive-text-aligns
+ *
+ * Usage examples:
+ * <p class="u-text-left"></p>
+ * <p class="u-text-center@tablet"></p>
+ * <p class="u-text-right@desktop"></p>
+ */
+
+$inuit-responsive-text-aligns-directions: (
+  // 'left',
+  'center',
+  // 'right',
+  // 'justify',
+) !default;
+
+@each $direction in $inuit-responsive-text-aligns-directions {
+  .u-text-#{$direction} {
+    text-align: #{$direction} !important;
+  }
+}
+
+@each $inuit-bp-name, $inuit-bp-value in $mq-breakpoints {
+  @include mq($from: $inuit-bp-name) {
+    @each $direction in $inuit-responsive-text-aligns-directions {
+      .u-text-#{$direction}\@#{$inuit-bp-name} {
+        text-align: #{$direction} !important;
+      }
+    }
+  }
+}
+
+
+
+

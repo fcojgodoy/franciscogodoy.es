@@ -152,7 +152,7 @@ $inuit-wrapper-width: 1500px;
 // @import "../../node_modules/inuitcss/objects/objects.ratio";
 // @import "../../node_modules/inuitcss/objects/objects.crop";
 // @import "../../node_modules/inuitcss/objects/objects.table";
-// @import "../../node_modules/inuitcss/objects/objects.pack";
+@import "../../node_modules/inuitcss/objects/objects.pack";
 // @import "objects/objects.card";
 @import "_objects/objects.content-small";
 @import "_objects/objects.wrapper";
@@ -208,3 +208,5 @@ $inuit-responsive-spacing-sizes: (
 @import "../../node_modules/inuitcss/utilities/utilities.responsive-spacings";
 @import "../../node_modules/inuitcss/utilities/utilities.print";
 @import "../../node_modules/inuitcss/utilities/utilities.hide";
+
+@import "_utilities/utilities.responsive-text-aligns";
