@@ -8,7 +8,7 @@ block title
 
 block content
 
-  .c-page.o-wrapper
+  main.c-page.o-wrapper( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
 
     include _includes/nav
 
@@ -26,7 +26,7 @@ block content
 
           .c-project-labels.o-list-inline__item
             ul.o-list-inline.u-margin-small
-              each val in [ 'HTML', 'CSS', 'WordPress' ]
+              each val in [ 'HTML', 'CSS', 'PHP', 'WordPress' ]
                 li.o-list-inline__item.c-skills__item= val
 
           .c-project-link.o-list-inline__item
@@ -43,7 +43,7 @@ block content
             figure.c-project-image.u-padding(class='u-padding-large@tablet u-padding-huge@desktop')
               img(src='/assets/files/img/portfolio/wpcpc-front.png' alt='')
               figcaption.c-project-image__caption
-                | Interfaz que crea el plugin, con un bloque de texto enriquecido y una casilla de aceptación de la política de privacidad.
+                | Contenido creado por el plugin: un bloque de texto personalizado y una casilla para aceptar la política de privacidad.
 
 
         .o-layout.o-layout--large( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
