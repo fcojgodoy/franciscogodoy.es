@@ -8,16 +8,19 @@ block title
 
 block content
 
-  main.main.c-page.o-wrapper
+  main.main.c-page.o-wrapper( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
 
     include _includes/nav--home
 
-    section
+    section( class='u-margin-bottom u-margin-bottom-large@tablet' )
 
       .o-layout.o-layout--flush
+
         .o-layout__item( class='u-1/1 u-1/2@tablet u-1/3@wide' )
-          h1.c-main-section-title Hola
-          .c-main-info
+
+          h1.c-main-section-title.u-margin-bottom-large Hola
+
+          .c-main-info.u-text-justify
             p
               | Soy un desarrollador front-end y WordPress freelance con 7 años de experiencia profesional, fundador de 
               a(href='https://growpress.es') GrowPress.
@@ -46,8 +49,9 @@ block content
 
     section#section-projects
 
-      h2 Proyectos
+      h2.u-h1.u-margin-bottom-large Proyectos
 
       .o-layout.o-layout--stretch
 
         include _includes/article
+
