@@ -2,15 +2,14 @@ mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, des
   .o-layout__item.u-margin-bottom( class="u-1/1 u-1/2@tablet u-1/3@desktop" )
     article
       a.c-project-card.u-padding( href=link )
-        header.c-project-card__header.u-padding-bottom-tiny
-          .c-project-card__client
-            img( src=clientImg alt=clientAlt width=clientWidth, height=clientHeight )
-          h1.c-project-card__title.u-margin-bottom-none= title
+        header.c-project-card__header.u-margin-bottom-tiny
+          //- .c-project-card__client.u-margin-bottom-tiny
+          //-   img( src=clientImg alt=clientAlt width=clientWidth, height=clientHeight )
+          h1.c-project-card__title.u-h2.u-margin-bottom-tiny= descriptionStrong
+          h1.c-project-card__subtitle.u-margin-bottom-none= title
+
         main.c-project-card__main.u-padding-bottom
-          p.c-project-card__description.u-margin-bottom-tiny
-            strong= descriptionStrong
-            br
-            span= descriptionContent
+          p.c-project-card__description.u-margin-bottom-tiny= descriptionContent
 
           ul.o-list-inline.c-project-tags.u-margin-bottom-none
 
@@ -24,14 +23,14 @@ mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, des
 
 +article(
   '/proyecto-caixabank.html',
-  '',
-  '',
-  '',
-  '',
+  '/assets/files/img/logos/logo_caixabank--gray.svg',
+  'CaixaBank',
+  '100',
+  '20',
   'Maquetación de interfaz de usuario',
   'CaixaBank',
-  'Colaboración durante ocho meses con el estudio barcelonés Guindo Design.',
-  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
+  'Colaboración durante ocho meses con el estudio barcelonés Guindo Design para la maquetación de la interfaz de clientes de La Caixa.',
+  [ 'HTML', 'CSS', 'SASS', 'JavaScript', 'jQuery', 'Grunt', 'Git', 'BEM' ],
   'Guindo Design',
   '2017-2018'  
   )
@@ -40,42 +39,42 @@ mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, des
   '/proyecto-wp-comment-policy-checkbox.html',
   '',
   '',
-  '100',
-  '20',
+  '',
+  '',
   'Desarrollo de plugin para WordPress',
   'WP Comment Policy Checkbox',
   'La necesidad de un cliente me llevó a desarrollar este plugin que alcanzó 2.000+ instalaciones activas a los 3 meses de su distribución.',
-  [ 'HTML', 'CSS', 'WordPress' ],
-  'Software libre',
+  [ 'HTML', 'CSS', 'PHP', 'WordPress' ],
+  'Proyecto propio',
   '2018'
   )
 
 +article(
   '/proyecto-adan-advocats.html',
-  '/assets/files/img/logos/logo_caixabank.svg',
-  'CaixaBank',
-  '100',
-  '20',
-  'Puro desarrollo front-end',
+  '/assets/files/img/logos/logo_adanadvocats.png',
   'Adan Advocats',
-  'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
-  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
-  'Guindo Design',
-  '2017-2018'
+  '',
+  '',
+  'De Joomla a WordPress sin perder posicinamiento',
+  'Adan Advocats. Despacho de abogados',
+  'Migración de una web antigua con buen posicinamiento a una web moderna con WordPress. ¡E incluso mejorando en los resultados de Google!',
+  [ 'HTML', 'CSS', 'SEO', 'WordPress' ],
+  'Cliente final',
+  '2017'
   )
 
 +article(
   '/proyecto-racc.html',
   '',
   '',
-  '100',
-  '20',
   '',
+  '',
+  'Maquetación de interfaz de usuario',
   'RACC',
-  'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
-  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
-  'Cliente final',
-  '2017'  
+  'Colaboración con la agencia barcelonesa Twentic para la maquetación de la interfaz de usuario del área privada de la nueva web del Real Automóvil Club de Cataluña',
+  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Gulp', 'Git' ],
+  'Twentic',
+  '2016'  
   )
 
 +article(
@@ -100,7 +99,7 @@ mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, des
   '20',
   'Aprovechando SASS',
   'inuit-columns',
-  'Plugin que añade una serie de utilidades para usar columnas al framwork InuitCss.',
+  'Plugin que añade una serie de utilidades para usar columnas al framework InuitCss.',
   [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
   'Proyecto propio',
   '2016'

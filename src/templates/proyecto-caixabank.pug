@@ -13,37 +13,48 @@ block content
     include _includes/nav
 
     article
+
       section
-        h2.c-project-main-text.o-content-small.u-margin-top-huge.u-margin-bottom-huge.u-h3
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation nisi ut aliquip ex ea commodo consequat.
+
+        h1.c-project-title.u-h6.u-margin-top-huge.u-margin-bottom-small.u-text-center
+          | CAIXABANK - Maquetación de interfaz de usuario
+
+        h2.c-project-main-text.o-content-small.u-margin-bottom.u-h3
+          | ¿No termináis a tiempo los sprints o preveéis picos de trabajo? Desde el primer día que me contactaron empecé a trabajar en la maquetación de la interfaz de usuarios de La Caixa.
+
+        .c-project-extra-info.o-list-inline.u-text-center.u-margin-bottom-huge
+
+          .c-project-labels.o-list-inline__item
+            ul.o-list-inline.u-margin-small
+              each val in [ 'HTML', 'CSS', 'SASS', 'JavaScript', 'jQuery', 'Grunt', 'Git', 'BEM' ]
+                li.o-list-inline__item.c-skills__item= val
+
       section
-        .o-layout
+
+        .o-layout( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
           .o-layout__item(class='u-1/1')
             figure.c-project-image.u-padding(class='u-padding-large@tablet u-padding-huge@desktop')
-              img(src='/assets/files/img/portfolio/racc-min.png' alt='')
+              img(src='/assets/files/img/portfolio/caixabank-ui.jpg' alt='Pantallazo de la interfaz de usuarios.')
               figcaption.c-project-image__caption
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-        .o-layout.o-layout--middle
+                | La interfaz de usuarios de La Caixa.
+
+        .o-layout.o-layout--middle( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
           .o-layout__item(class='u-1/1 u-1/2@tablet')
             figure.c-project-image.c-project-image.u-padding(class='u-padding-large@tablet')
-              img(src='/assets/files/img/portfolio/racc-min.png' alt='')
+              img(src='/assets/files/img/portfolio/caixabank-ux.jpg' alt='')
               figcaption.c-project-image__caption
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                | Diseño UX de un bloque de contenido, donde se puede apreciar su complejidad.
           .o-layout__item(class='u-1/1 u-1/2@tablet')
             .o-box
               p.u-h4
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        .o-layout
-          .o-layout__item(class='u-1/1 u-1/2@tablet')
-            figure.c-project-image.c-project-image.u-padding(class='u-padding-large@tablet')
-              img(src='/assets/files/img/portfolio/racc-min.png' alt='')
-              figcaption.c-project-image__caption
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-          .o-layout__item(class='u-1/1 u-1/2@tablet')
-            figure.c-project-image.c-project-image.u-padding(class='u-padding-large@tablet')
-              img(src='/assets/files/img/portfolio/racc-min.png' alt='')
-              figcaption.c-project-image__caption
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
-        .o-layout
-          .o-layout__item(class='u-1/2 u-1/2@tablet')
-            blockquote( cite='https://wordpress.org/support/topic/mas-simple-no-puede-ser/' ) Francamente bueno, objetivo y práctico, hace que no seamos tan vulnerables a la nueva RGPD frente a los comentarios de los blogs! <br>Un imprescindible si WordPress no se pone las pilas.
+                | Caixabank, uno de los mayores bancos españoles, posee diferentes aplicaciones con interfaces de usuario que están en constante cambio y mejora.
+                br
+                | Ante una necesidad de aumentar el ritmo de trabajo en la agencia encargada del diseño y desarrollo de una de estas interfaces, fui contactado para unirme al equipo.
+                br
+                | El resutado fue una colaboración duarnte casi un año con multitud de aportes de conocimientos y experiencias desde ambos lados.
+
+        .c-project-extra-info.o-list-inline.u-text-center.u-margin-bottom-huge
+
+          .c-project-link.o-list-inline__item
+            a.u-margin-small( href="/index.html#section-projects").c-btn.c-btn--primary.c-btn--large Ver otros proyectos
+            a.u-margin-small.c-btn.c-btn--primary.c-btn--large( href='mailto:hola@franciscogodoy.es' ) Hablar con Francisco

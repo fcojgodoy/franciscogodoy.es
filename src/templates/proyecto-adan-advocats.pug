@@ -1,0 +1,98 @@
+extends _includes/base
+
+
+block title
+  
+  title Adan Advocats - Una migración exitosa
+
+
+block content
+
+  main.c-page.o-wrapper( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+
+    include _includes/nav
+
+    article
+
+      section
+
+        h1.c-project-title.u-h6.u-margin-top-huge.u-margin-bottom-small.u-text-center
+          | ADAN ADVOCATS - De Joomla a WordPress sin perder posicinamiento
+
+        h2.c-project-main-text.o-content-small.u-margin-bottom.u-h3
+          | Migración de una web antigua con buen posicinamiento a una web moderna con WordPress. ¡E incluso mejorando en los resultados de Google!
+
+        .c-project-extra-info.o-list-inline.u-text-center.u-margin-bottom-huge
+
+          .c-project-labels.o-list-inline__item
+            ul.o-list-inline.u-margin-small
+              each val in [ 'HTML', 'CSS', 'SEO', 'WordPress' ]
+                li.o-list-inline__item.c-skills__item= val
+
+          .c-project-link.o-list-inline__item
+            a.u-margin-small( target='_blank' href="http://www.adanadvocats.com").c-btn.c-btn--primary.c-btn--small Ver en vivo
+
+
+      section
+
+        .o-layout( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+
+          .o-layout__item(class='u-1/1')
+
+            figure.c-project-image.u-padding(class='u-padding-large@tablet u-padding-huge@desktop')
+              img(src='/assets/files/img/portfolio/adanadvocats-home.png' alt='Pantallazo de la portada de la web del despacho de abogados Adan Advocats.')
+              figcaption.c-project-image__caption
+                | Portada de la web del despacho de abogados Adan Advocats.
+
+
+        .o-layout.o-layout--large( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+
+          .o-layout__item( class='u-1/1 u-3/5@desktop u-push-1/5@desktop' )
+            p.u-h4.u-text-justify
+              | 
+
+
+        .o-layout.o-layout--middle.o-layout--large( class='u-margin-bottom-large u-margin-bottom-huge@tablet u-layout--reverse@tablet' )
+
+          .o-layout__item(class='u-1/1 u-1/2@tablet')
+
+            .o-box
+              p.u-h3.u-text-justify
+                | Simpleza y funcionalidad: permite añadir a los comentarios de WordPress una casilla de   aceptación de la política de privacidad, para así poder cumplir con el 
+                abbr( title='Reglamento General de Protección de Datos' ) RGPD.
+                br
+                | Permite también añadir un texto a través de una instancia del editor visual de WordPress.
+
+          .o-layout__item(class='u-1/1 u-1/2@tablet')
+
+            figure.c-project-image.c-project-image.u-padding(class='u-padding-large@desktop')
+              img(src='/assets/files/img/portfolio/wpcpc-code.jpeg' alt='')
+
+
+        .o-layout.o-layout--middle.o-layout--large( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+
+          .o-layout__item(class='u-1/1 u-1/2@tablet')
+
+            figure.c-project-blockquote
+              blockquote.c-project-blockquote__blockquote( cite='https://wordpress.org/support/topic/mas-simple-no-puede-ser/' )
+                | Francamente bueno, objetivo y práctico, hace que no seamos tan vulnerables a la nueva RGPD frente a los comentarios de los blogs!
+                br
+                | Un imprescindible si WordPress no se pone las pilas.
+              figcaption.c-project-blockquote__author @raulfg
+
+            figure.c-project-blockquote.u-margin-bottom-large
+              blockquote.c-project-blockquote__blockquote( cite='https://wordpress.org/support/topic/gracias-por-el-plugin-2/' ) Muchas gracias por actualizar el plugin, no veas lo útil que nos está siendo para cumplir la RGPD en los comentarios.
+              figcaption.c-project-blockquote__author @lauradiaz
+
+            .c-project-extra-info.o-list-inline.u-text-center.u-margin-bottom-huge
+
+              .c-project-link.o-list-inline__item
+                a.u-margin-small( target='_blank' href="https://wordpress.org/plugins/wp-comment-policy-checkbox/").c-btn.c-btn--primary.c-btn--large Ver en WordPress.org
+                a.u-margin-small.c-btn.c-btn--primary.c-btn--large( href='mailto:hola@franciscogodoy.es' ) Hablar con Francisco
+
+          .o-layout__item(class='u-1/1 u-1/2@tablet')
+
+            figure.c-project-image.c-project-image.u-padding(class='u-padding-large@desktop')
+              img(src='/assets/files/img/portfolio/wpcpc-stats.png' alt='')
+              figcaption.c-project-image__caption
+                | En los tres primeros meses el plugin ha sido instalado en más de 2.000 webs.
