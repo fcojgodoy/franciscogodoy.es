@@ -8,9 +8,7 @@
  */
 
 .c-project-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    width: 100%;
     border: 1px solid $color-bg-secondary;
     color: $color-text;
     
@@ -27,47 +25,54 @@
 }
 
 
-    .c-project-card__footer {
-        text-align: right;
-        margin-top: auto;
+    .c-project-card__inner {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
 
-        > * {
-            padding-right: 5px;
-            border-right: 1px solid $color-bg-secondary;
-            margin-right: 5px;
 
-            &:last-child {
-                border-right: none;
+        .c-project-card__footer {
+            text-align: right;
+            margin-top: auto;
+
+            > * {
+                padding-right: 5px;
+                border-right: 1px solid $color-bg-secondary;
+                margin-right: 5px;
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+
+        }
+
+
+        .c-project-card__client {
+            height: 20px;
+
+            > img {
+                max-width: 100%;
+                max-height: 100%;
             }
         }
 
-    }
 
-
-    .c-project-card__client {
-        height: 20px;
-
-        > img {
-            max-width: 100%;
-            max-height: 100%;
+        .c-project-card__title {
+            // @include inuit-font-size( 15px );
+            font-weight: 200;
         }
-    }
 
 
-    .c-project-card__title {
-        // @include inuit-font-size( 15px );
-        font-weight: 200;
-    }
+        .c-project-card__subtitle {
+            @include inuit-font-size( 15px );
+            font-weight: 200;
+            text-transform: uppercase;
+        }
 
 
-    .c-project-card__subtitle {
-        @include inuit-font-size( 15px );
-        font-weight: 200;
-        text-transform: uppercase;
-    }
-
-
-    .c-project-card__description {
-        @include inuit-font-size( 14px, 1.5 );
-        font-weight: 200;
-    }
+        .c-project-card__description {
+            @include inuit-font-size( 14px, 1.5 );
+            font-weight: 200;
+        }

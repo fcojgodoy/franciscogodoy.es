@@ -1,7 +1,7 @@
 mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, descriptionStrong, descriptionContent, tags, agency, data )
   .o-layout__item.u-margin-bottom( class="u-1/1 u-1/2@tablet u-1/3@desktop" )
-    article
-      a.c-project-card.u-padding( href=link )
+    a.c-project-card.u-padding( href=link )
+      article.c-project-card__inner
         header.c-project-card__header.u-margin-bottom-tiny
           //- .c-project-card__client.u-margin-bottom-tiny
           //-   img( src=clientImg alt=clientAlt width=clientWidth, height=clientHeight )
@@ -81,12 +81,12 @@ mixin article( link, clientImg, clientAlt, clientWidth, clientHeight, title, des
   '/proyecto-acasoc.html',
   '',
   '',
-  '100',
-  '20',
   '',
+  '',
+  'Puesta a punto de WordPress desactualizado',
   'Acasoc',
-  'Con esta premisa me contrataron desde Guindo Design para la maquetación del área interna de La Caixa.',
-  [ 'HTML', 'CSS', 'SASS', 'Javascript', 'jQuery', 'Git', 'BEM' ],
+  '',
+  [ 'HTML', 'CSS', 'SEO', 'WordPress' ],
   'Cliente final',
   '2017'  
   )
