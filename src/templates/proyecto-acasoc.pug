@@ -19,11 +19,63 @@ block content
         h1.c-project-title.u-h6.u-margin-top-huge.u-margin-bottom-small.u-text-center
           | ACASOC, EXPERTOS EN CONCURSAL - Rehaciendo una web
 
-        p.o-content-small.u-margin-bottom
-          | Esta página está por crear. Si deseas más información sobre el proyecto o sobre mí, puedes ponerte en contacto:
+        h2.c-project-main-text.o-content-small.u-margin-bottom.u-h3
+          | Optimización SEO básica y de plantilla para una web que se estaba quedando estancada. Actualizaciones de WordPress y sus plugins. Configuración de un blog e introducción y maquetación de nuevo contenido.
+
+        .c-project-extra-info.o-list-inline.u-text-center.u-margin-bottom
+
+          .c-project-labels.o-list-inline__item
+            ul.o-list-inline.u-margin-small
+              each val in [ 'HTML', 'CSS', 'SEO', 'PHP', 'WordPress' ]
+                li.o-list-inline__item.c-skills__item= val
 
         .c-project-extra-info.o-list-inline.u-text-center.u-margin-bottom-huge
 
           .c-project-link.o-list-inline__item
             a.u-margin-small( target='_blank' href="http://www.acasoc.com/").c-btn.c-btn--primary.c-btn--small Ver online
             a.u-margin-small( target='_blank' href="mailto:hola@franciscogodoy.es").c-btn.c-btn--primary.c-btn--small Contactar con Francisco
+
+      section
+
+        .o-layout( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+          .o-layout__item(class='u-1/1')
+            figure.c-project-image.u-padding(class='u-padding-large@tablet u-padding-huge@desktop')
+              img(src='/assets/files/img/portfolio/acasoc-min.png' alt='Pantallazo de la web de Acasoc.')
+              figcaption.c-project-image__caption
+                | Página de inicio de la web de Acasoc.
+
+        .o-layout.o-layout--large( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+
+          .o-layout__item( class='u-1/1 u-3/5@desktop u-push-1/5@desktop' )
+            p.u-h4.u-text-justify
+              | Acasoc, despacho de Barcelona especializado en derecho concursal, contactó conmigo para una renovación de su web y para la introducción de nuevo contenido y nuevas funciones.
+              br
+              | Realicé una puesta a punto de WordPress, actualizándolo y realizando una profunda optimización SEO:
+            ul.u-h4.u-text-justify
+              li optimización de URLs,
+              li mejora e introducción de la meta información y títulos de cada página,
+              li optimización de links internos y activación de pingbacks,
+              li creación del mapa del sitio en XML,
+              li implementación de Google Tag Manager,
+              li limpieza de código y reducción de las peticiones a la base de datos,
+              li creación de caché y tiempo de expiación.
+            p.u-h4.u-text-justify Introduje también nuevas funciones, como la implementación del aviso de uso de cookies o la creación de un tipo de entrada personalizado.
+
+        .o-layout.o-layout--middle( class='u-margin-bottom-large u-margin-bottom-huge@tablet' )
+          .o-layout__item(class='u-1/1 u-1/2@tablet')
+            figure.c-project-image.c-project-image.u-padding(class='u-padding-large@tablet')
+              img(src='/assets/files/img/portfolio/acasoc-casos-de-exito.jpg' alt='Página con un listado de los casos de éxito de Acasoc.')
+              figcaption.c-project-image__caption
+                | Página con un listado de los casos de éxito de Acasoc.
+          .o-layout__item(class='u-1/1 u-1/2@tablet')
+            .o-box
+              p.u-h4
+                | Ante la necesidad de Acasoc de mostrar un listado con sus casos de éxito en materia de resoluciones judiciales desarrollé un tipo de entrada personalizada (
+                i.english Custom Post Type
+                | ), de modo que pudieran introducir sus nuevos casos de éxito de la forma más fácil.
+
+        .c-project-extra-info.o-list-inline.u-text-center.u-margin-bottom-huge
+
+          .c-project-link.o-list-inline__item
+            a.u-margin-small( target='_blank' href="http://www.acasoc.com/" ).c-btn.c-btn--primary.c-btn--large Ver online
+            a.u-margin-small.c-btn.c-btn--primary.c-btn--large( href='mailto:hola@franciscogodoy.es' ) Hablar con Francisco
